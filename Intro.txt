@@ -1,0 +1,19 @@
+1) create aa reatcjs app and link it to a github repo 
+
+2) now deploy it on github by using following steps  .. 
+
+    >> npm i gh-pages --save-dev
+    >> now go to the package.json and update the "homepage" as : "https://githubusername.github.io/myreactapp
+
+    afte that add these two in thr script tag there  ...     
+            "scripts": {
+                "predeploy" : "npm run build",
+                "deploy" : "gh-pages -d build",
+            }
+
+    >> now git add , commit and push 
+    >> after that >>  git run deploy
+
+    >> aftetr that our reatc app will be up and running  >> https://githubusername.github.io/myreactapp/
+
+3) github action 
